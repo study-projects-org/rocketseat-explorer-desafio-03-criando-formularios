@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliar mentoria</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/advanced-form.css">
+</head>
+<body>
+
+  <div class="page">
+    <header>
+      <h1>AVALIE A SUA MENTORIA</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+    </header>
+
+    <form id="ratingForm">
+      <div class="star-raiting-container ">
+        <fieldset class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5" title="5 stars"></label>
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="4 stars"></label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="3 stars"></label>
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="2 stars"></label>
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1" title="1 star"></label>
+        </fieldset>
+      </div>
+
+      <div class="form-fields">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="lastName">Sobrenome</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">E-mail<span>(digite um e-mail válido)</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>INFORMAÇÕES DO MENTOR</legend>
+            
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="mentor">Selecione quem foi seu mentor</label>
+                <select id="mentor" name="mentor">
+                  <option value="mentor1">Mentor 1</option>
+                  <option value="mentor2">Mentor 2</option>
+                  <option value="mentor3">Mentor 3</option>
+                  <option value="mentor4">Mentor 4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="feedback">Feedback sobre o mentor</label>
+              <textarea id="feedback" name="feedback"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="noDoubt" name="noDoubt"/>
+              <label for="noDoubt">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+            
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="date">Data<span>(DD/MM/AAA)</span></label>
+                <input type="text" id="date" name="date" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="startHour">Das</label>
+                <input type="time" id="startHour" name="startHour" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="endHour">Até</label>
+                <input type="time" id="endHour" name="endHour" required>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <button form="ratingForm" class="button">SALVAR</button>
+      </div>
+
+    </form>
+  </div>
+  
+</body>
+</html>
